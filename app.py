@@ -1,10 +1,16 @@
-
 from flask import Flask, render_template
-app = Flask(__name__)                    # this gets the name of the file so Flask knows it's name
 
-@app.route("/")                          # this tells you the URL the method below is related to
-def hello_world():
+app = Flask(__name__) 
+
+@app.route("/") 
+@app.route("/homepage.html")
+def dishcovery():
     return render_template('homepage.html')
-  
-if __name__ == '__main__':               # this should always be at the end
+
+@app.route("/restaurants.html")
+def restaurants():
+    return render_template('restaurants.html')
+
+
+if __name__ == '__main__': 
     app.run(debug=True, host="0.0.0.0")

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins:wght@400;500;700&display=swap');
+
+/* general styling */
+body {
+    background: #FAF7F1;
+    color: #184632;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+/* Navbar styles */
+#logo-img {
+    width: 250px;
+    height: auto;
+    margin: 0px 0 0 0;
+    padding-bottom: 0px;
+}
+
+.navbar {
+    background-color: #FAF7F1 !important;
+    padding: 0.5rem 2rem;
+    padding-bottom: 10px;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: #184632 !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ff914e !important;
+}
+
+/* Header */
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.image-container {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.food {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.header .textBox h1 {
+    line-height: 1em;
+    font-weight: 500;
+    margin: 25px 0;
+    font-family: 'Rampart One';
+    font-size: 80px;
+}
+
+.textBox p {
+    margin-right: 90px !important
+}
+
+.header .textBox p {
+    color: #184632;
+    font-size: 1em;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+.header .textBox span {
+    color: #ff914e;
+    font-weight: 900;
+}
+
+/* typeIt section Styling */
+#typeIt-container {
+    text-align: center;
+    font-size: 2em;
+}
+
+#typeIt-container strong {
+    color: #ff914e;
+}
+
+/* Thumbnail */
+#thumbnail-container {
+    padding-top: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.thumbnail {
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail li {
+    list-style: none;
+    display: inline-block;
+    margin: 1em 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.thumbnail li:hover {
+    transform: translateY(-20px);
+}
+
+.thumbnail li img {
+    max-width: 15rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 2em auto;
+    color: #9ca3af;
+}
+
+footer #name {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+footer a {
+    text-decoration: dashed underline;
+}
+
+footer li {
+    display: inline;
+}
+
+footer .social-media {
+    padding-left: 10px;
+    font-size: 1.7em;
+}
+
+/* Similar styles for internal pages */
+.internal-header {
+    text-align: center;
+    background-color: #353550;
+    padding: 2em;
+}
+
+.internal-header span {
+    color: #ff914e;
+}
+
+.internal-header #tagline {
+    font-size: 1.2em;
+    font-family: 'Comfortaa';
+    padding-top: 1em;
+    letter-spacing: 1.2px;
+    color: #fff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .image-container {
+        width: 300px;
+        height: 300px;
+        margin: 30px auto;
+    }
+
+    .header .textBox h1 {
+        font-size: 2.5em;
+        line-height: 1em;
+        font-weight: 500;
+        margin: 25px 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-nav {
+        background-color: #FAF7F1;
+        padding: 1rem;
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header .textBox {
+        text-align: center;
+    }
+
+    .thumbnail li {
+        margin: 0.5em;
+    }
+
+    .thumbnail img {
+        width: 2em;
+    }
+
+    #typeIt-container, footer {
+        font-size: 1em;
+    }
+
+    .internal-header #tagline {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .navbar-nav .nav-link {
+        font-size: 1.5rem;
+    }
+}
