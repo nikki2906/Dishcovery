@@ -11,6 +11,9 @@ def dishcovery():
 def restaurants():
     return render_template('restaurants.html')
 
+@app.route("/recipes.html")
+def recipes():
+    return render_template('recipes.html')
 
 if __name__ == '__main__': 
     app.run(debug=True, host="0.0.0.0")
