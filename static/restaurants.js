@@ -202,7 +202,7 @@ function createMarkerAndInfo(place) {
                 <div style="display: flex; flex-direction: column; gap: 15px;">
         `;
         
-        ['food', 'service', 'ambiance'].forEach(aspect => {
+        ['food', 'service', 'ambience'].forEach(aspect => {
             const total = sentiments[aspect].positive + sentiments[aspect].negative;
             if (total > 0) {
                 const positivePercentage = (sentiments[aspect].positive / total) * 100;
@@ -285,7 +285,7 @@ function analyzeRestaurantSentiment(reviews) {
     const aspects = {
         food: { positive: 0, negative: 0, keywords: ['food', 'dish', 'taste', 'flavor', 'delicious', 'bland'] },
         service: { positive: 0, negative: 0, keywords: ['service', 'staff', 'waiter', 'waitress', 'friendly', 'rude'] },
-        ambiance: { positive: 0, negative: 0, keywords: ['ambiance', 'atmosphere', 'decor', 'noise', 'comfortable', 'crowded'] },
+        ambience: { positive: 0, negative: 0, keywords: ['ambience', 'atmosphere', 'decor', 'noise', 'comfortable', 'crowded'] },
         value: { positive: 0, negative: 0, keywords: ['price', 'value', 'expensive', 'cheap', 'worth', 'overpriced'] }
     };
     const positiveWords = ['great', 'good', 'excellent', 'amazing', 'fantastic', 'delicious', 'friendly', 'comfortable', 'worth'];
