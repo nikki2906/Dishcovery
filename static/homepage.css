@@ -187,6 +187,38 @@ footer .social-media {
     color: #fff;
 }
 
+/* Login page specific styles */
+.container.mt-5 {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.container.mt-5 h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container.mt-5 form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container.mt-5 .form-control {
+    max-width: 100%;
+}
+
+.container.mt-5 button[type="submit"] {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.container.mt-5 p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1024px) {
     .image-container {
@@ -241,3 +273,4 @@ footer .social-media {
         font-size: 1.5rem;
     }
 }
+

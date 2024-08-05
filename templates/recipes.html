@@ -40,9 +40,15 @@
             <!-- Navigation menu -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="restaurants.html">Restaurants</a></li>
-                    <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('dishcovery') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('restaurants') }}">Restaurants</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('recipes') }}">Recipes</a></li>
+                    {% if current_user.is_authenticated %}
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}">Logout</a></li>
+                    {% else %}
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
