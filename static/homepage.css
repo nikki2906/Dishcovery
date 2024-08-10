@@ -52,7 +52,8 @@ ul {
 }
 
 .navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
+.navbar-nav .nav-link.active,
+.navbar-nav .curr {
     color: #ff914e !important;
 }
 
