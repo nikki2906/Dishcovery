@@ -39,7 +39,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('dishcovery') }}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('restaurants') }}">Restaurants</a></li>
+                    <li class="nav-item"><a class="nav-link curr" href="{{ url_for('restaurants') }}">Restaurants</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('recipes') }}">Recipes</a></li>
                     {% if current_user.is_authenticated %}
                         <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}">Logout</a></li>
@@ -61,7 +61,7 @@
 
     <!-- Map input -->
     <div id="input-outer-cont">
-        <p>Enter your location and a keyword below to get 3 nearest restaurants</p>
+        <p>Enter your location and a keyword below to get 5 nearest restaurants</p>
         <div id="input-inner-cont">
             <div class="input-group">
                 <i class="fa-solid fa-location-dot"></i>

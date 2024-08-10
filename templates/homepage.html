@@ -42,7 +42,7 @@
             <!-- Navigation menu -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="{{ url_for('dishcovery') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link curr" href="{{ url_for('dishcovery') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('restaurants') }}">Restaurants</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('recipes') }}">Recipes</a></li>
                     {% if current_user.is_authenticated %}
